@@ -17,8 +17,8 @@ app.get('*', function(req, res) {
 // START THE SERVER
 // ====================================
 // start the server
-app.listen(1337);
-console.log('1337 is the magic port!');
+app.listen(8100);
+console.log('8100 is the magic port!');
  
 
 
