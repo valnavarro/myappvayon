@@ -5,6 +5,7 @@
 var express    	= require('express');		// call express
 var app        	= express(); 				// define our app using express
 var path 	   	= require('path');
+var config 	   	= require('./config');
 
 // set static files location
 // used for requests that our frontend will make
@@ -17,8 +18,8 @@ app.get('*', function(req, res) {
 // START THE SERVER
 // ====================================
 // start the server
-app.listen(8100);
-console.log('8100 is the magic port!');
+app.listen(config.port);
+console.log('Kit API/APP on port ' + config.port);
  
 
 
